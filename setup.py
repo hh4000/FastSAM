@@ -12,11 +12,13 @@ setup(
     name="fastsam",
     version="0.1.1",
     install_requires=REQUIREMENTS,
-    packages=["fastsam", "fastsam_tools", "ultralytics"],
-    package_dir= {
-        "fastsam": "fastsam",
-        "fastsam_tools": "utils",
-        "ultralytics": "ultralytics.*"
-    },
+    packages=find_packages(
+        where='.',
+        include=[
+            'fastsam',  # include only top-level fastsam
+            'utils',  # include only top-level utils
+            'ultralytics*',  # include ultralytics and all its subpackages
+        ],
+    ),
     url="https://github.com/CASIA-IVA-Lab/FastSAM"
 )
