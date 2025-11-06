@@ -15,8 +15,8 @@ setup(
     packages=["fastsam", "fastsam_tools", "ultralytics"],
     package_dir= {
         "fastsam": "fastsam",
-        "fastsam_tools": "utils",
-        "ultralytics": "ultralytics"
+        "fastsam_tools": "utils.*",
+        "ultralytics": "ultralytics.*"
     },
     url="https://github.com/CASIA-IVA-Lab/FastSAM"
 )
