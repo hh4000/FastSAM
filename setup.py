@@ -20,5 +20,8 @@ setup(
             'ultralytics*',  # include ultralytics and all its subpackages
         ],
     ),
-    url="https://github.com/CASIA-IVA-Lab/FastSAM"
+    url="https://github.com/CASIA-IVA-Lab/FastSAM",
+    include_package_data=True,
+    package_data={'ultralytics': ['**/*.yaml', '**/*.txt', '**/*.json']}
+
 )
