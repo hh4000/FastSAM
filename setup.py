@@ -12,7 +12,7 @@ setup(
     name="fastsam",
     version="0.1.1",
     install_requires=REQUIREMENTS,
-    packages=["fastsam", "fastsam_tools"],
+    packages=["fastsam", "fastsam_tools", "ultralytics"],
     package_dir= {
         "fastsam": "fastsam",
         "fastsam_tools": "utils",
